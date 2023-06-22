@@ -15,15 +15,15 @@ var mysqlSettings = {
 const pool = mysql.createPool(mysqlSettings);
 
 pool.on('acquire', function (connection) {
-  console.log('Connection %d acquired', connection.threadId);
+  logger.info('Connection %d acquired', connection.threadId);
 });
 
 pool.on('enqueue', function () {
-  console.log('Waiting for available connection slot');
+  logger.info('Waiting for available connection slot');
 });
 
 pool.on('release', function (connection) {
-  console.log('Connection %d released', connection.threadId);
+  logger.info('Connection %d released', connection.threadId);
 });
 
 var getConnection = function (callback) {

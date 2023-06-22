@@ -11,6 +11,9 @@
     "node-cron": "^2.0.3",
     "nodemailer": "^4.7.0",
     "redis": "^4.0.4",
-    "rgb-hex": "^2.1.0"
+    "rgb-hex": "^2.1.0",
+    "winston": "^2.4.2",
+    "winston-daily-rotate-file": "^3.1.4",
+    "moment": "^2.22.1"
   }
 }
