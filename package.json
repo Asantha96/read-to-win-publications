@@ -1,0 +1,16 @@
+{
+  "name": "my-project",
+  "version": "",
+  "dependencies": {
+    "async": "^2.6.1",
+    "axios": "^0.18.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "lodash": "^4.17.21",
+    "mysql2": "^1.6.1",
+    "node-cron": "^2.0.3",
+    "nodemailer": "^4.7.0",
+    "redis": "^4.0.4",
+    "rgb-hex": "^2.1.0"
+  }
+}
