@@ -23,3 +23,19 @@
 7. Configure the database.js file host, user and password
 8. Configure app.js with sender mail, receiver maail and sender mail app password
 9. Execute the app using "node app.js" or "nodemon app.js"
+10. To get the details by ISBN, use GET Method followed url "localhost:9001/book/ISBN_Number"
+11. To get the author List, use GET Method followed url "localhost:9001/author/getAuthorList"
+12. To save an author, use POST Method with JSON body ({
+    "FIRST_NAME":"Kavindu",
+    "LAST_NAME":"Rathnayake",
+    "EMAIL":"asdsasfsfdg@gmail.com",
+    "CONTACT_NO": "7413674589"
+	}) followed url "localhost:9001/author/addAuthor"
+13. To save a book, use POST Method with JSON body ({
+    "AUTHOR_ID":"1",
+    "CATEGORY":"Scifi",
+    "TITLE":"Gravity",
+    "ISBN_NO": "ISBN12345"
+	}) followed url "localhost:9001/book/addBook"
+14. To like a book by book id, use POST Method with JSON body ({"BOOK_ID": 1}) followed url "localhost:9001/book/likeBookById"
+15. To like a book by ISBN, use POST Method with JSON body ({"ISBN_NO": "ISBN12345"}) followed url "localhost:9001/book/likeBookByIsbn"
